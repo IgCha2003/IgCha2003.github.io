@@ -39,6 +39,11 @@ $(function () {
     //   createPlatform(0, i, canvas.width, 1);
     // }
 
+    //30% : You must create at least 3 cannons in different locations.
+    //30% : You must have at least 3 collectables of different types.
+    //30% : You must include at least 5 platforms
+    //10% : Your game must be playable!
+
     /////////////////////////////////////////////////
     //////////ONLY CHANGE BELOW THIS POINT///////////
     /////////////////////////////////////////////////
@@ -48,16 +53,24 @@ $(function () {
     // You must decide the x position, y position, width, and height of the platforms
     // example usage: createPlatform(x,y,width,height)
 
+    createPlatform(600, 625, 70, 50); //1st platform
+    createPlatform(800, 525, 70, 50); //2nd platform
+    createPlatform(1000, 425, 70, 50); //3rd platform
+    createPlatform(1200, 325, 30, 20); //4th platform
+    createPlatform(900, 225, 200, 20); //5th platform
+    createPlatform(600, 325, 85, 20); //6th platform
+    createPlatform(300, 225, 95, 400); //final
 
-
-    
     // TODO 2
     // Create collectables
     // You must decide on the collectable type, the x position, the y position, the gravity, and the bounce strength
     // Your collectable choices are 'database' 'diamond' 'grace' 'kennedi' 'max' and 'steve'; more can be added if you wish
     // example usage: createCollectable(type, x, y, gravity, bounce)
-
-
+    
+    createCollectable("steve", 600, 325, 20, 0.5 ); //1st collectable "steve"
+    createCollectable("max", 1000, 325, 20, 0.9); //
+    createCollectable("database", 800, 225, 10, 0.50); //
+    createCollectable("grace", 600, 225, 10, 0.8); //
 
 
     // TODO 3
@@ -66,7 +79,7 @@ $(function () {
     // Your wall choices are: 'top' 'left' 'right' and 'bottom'
     // example usage: createCannon(side, position, delay, width, height)
 
-
+    createCannon
 
 
     /////////////////////////////////////////////////
