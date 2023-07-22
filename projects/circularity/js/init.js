@@ -25,7 +25,7 @@ var init = function (window) {
 
 
         // TODO 2 : Create a function that draws a circle 
-        function drawCircle() {
+        function drawCircle(physikz.addRandomVelocity(circle, canvas, 10, 10);) {
             circle = draw.randomCircleInArea(canvas, true, true, "#999", 2);
             physikz.addRandomVelocity(circle, canvas);
             view.addChild(circle);
@@ -45,6 +45,12 @@ var init = function (window) {
         and check to see if it has drifted off the screen.         
         */
         function update() {
+            physikz.updatePosition([0]);
+            physikz.updatePosition([1]);
+            physikz.updatePosition([2]);
+            physikz.updatePosition([3]);
+            physikz.updatePosition([4]);
+
             // TODO 4 : Update the circle's position //
 
 
